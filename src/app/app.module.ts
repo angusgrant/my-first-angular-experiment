@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
+import { HamburgerMenuComponent } from './nav/hamburger-menu/hamburger-menu.component'
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     NavComponent,
     AboutComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    HamburgerMenuComponent
   ],
   imports: [
     BrowserModule,

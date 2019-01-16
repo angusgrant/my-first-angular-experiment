@@ -1,0 +1,116 @@
+
+       <button (click)="toggleShowDiv('divA')" type="button" class="main-navigation-menu__button" data-toggle="collapse" data-target="#collapse-main-nav"
+       aria-haspopup="true" [attr.aria-expanded]="animationState == 'in' ? true :  false" aria-label="Site menu" title="Site menu">
+       <span class="icon-bar bar-one"></span>
+       <span class="icon-bar bar-two"></span>
+       <span class="icon-bar bar-three"></span>
+     </button>
+     <div class="main-navigation-menu__dropdown 
+main-navigation-dropdown" id="collapse-main-nav" [@slideInOut]="animationState">
+       <ul class="main-navigation-dropdown__menu">
+         <li class="main-navigation-dropdown__item active">
+           <a routerLink="/publications" title="A-Z Publications" class="main-navigation-dropdown__link js-link-toggle-main-sub-menu">A-Z
+             Publications</a>
+           <span class="main-navigation-dropdown__toggle-expand js-link-toggle-main-sub-menu">
+             <span class="glyphicon glyphicon-chevron-down 
+main-navigation-dropdown__chevron js-toggle-main-menu-item"
+               aria-label="expand or collapse" title="expand or collapse">
+             </span>
+           </span>
+           <ul class="main-navigation-dropdown__submenu js-toggle-display-sub-menu">
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/" class="main-navigation-dropdown__submenu-link" title="A-Z index of journals">A-Z
+                 index of journals</a>
+             </li>
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/" class="main-navigation-dropdown__submenu-link" title="Accredited journals">Accredited
+                 journals</a>
+             </li>
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/" class="main-navigation-dropdown__submenu-link" title="How to submit a paper">How
+                 to submit a paper</a>
+             </li>
+           </ul>
+         </li>
+         <li class="main-navigation-dropdown__item active">
+           <a routerLink="/" title="Collections" class="main-navigation-dropdown__link">Collections</a>
+         </li>
+         <li class="main-navigation-dropdown__item active">
+           <a routerLink="/books" title="Books" class="main-navigation-dropdown__link">Books</a>
+         </li>
+         <li class="main-navigation-dropdown__item active">
+           <a routerLink="/proceedings" title="Proceedings" class="main-navigation-dropdown__link">Proceedings</a>
+         </li>
+         <li class="main-navigation-dropdown__item active">
+           <a routerLink="/series" title="Series" class="main-navigation-dropdown__link">Series</a>
+         </li>
+         <li class="main-navigation-dropdown__item active">
+           <a routerLink="/" title="Publishers" class="main-navigation-dropdown__link js-link-toggle-main-sub-menu">Publishers</a>
+           <span class="main-navigation-dropdown__toggle-expand js-link-toggle-main-sub-menu">
+             <span class="glyphicon glyphicon-chevron-down 
+main-navigation-dropdown__chevron js-toggle-main-menu-item"
+               aria-label="expand or collapse" title="expand or collapse">
+             </span>
+           </span>
+           <ul class="main-navigation-dropdown__submenu js-toggle-display-sub-menu">
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/publishers" class="main-navigation-dropdown__submenu-link" title="A-Z list of publishers">A-Z
+                 list of publishers</a>
+             </li>
+           </ul>
+         </li>
+         <li class="main-navigation-dropdown__item active">
+           <a routerLink="/" title="For Librarians" class="main-navigation-dropdown__link js-link-toggle-main-sub-menu">For
+             Librarians</a>
+           <span class="main-navigation-dropdown__toggle-expand js-link-toggle-main-sub-menu">
+             <span class="glyphicon glyphicon-chevron-down 
+main-navigation-dropdown__chevron js-toggle-main-menu-item"
+               aria-label="expand or collapse" title="expand or collapse">
+             </span>
+           </span>
+           <ul class="main-navigation-dropdown__submenu js-toggle-display-sub-menu">
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/how-to-get-access" class="main-navigation-dropdown__submenu-link" title="How to get access / subscribe">How
+                 to get access / subscribe</a>
+             </li>
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/librarians-faq" class="main-navigation-dropdown__submenu-link" title="Librarian FAQs">Librarian
+                 FAQs</a>
+             </li>
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/branding-options" class="main-navigation-dropdown__submenu-link" title="Branding options">Branding
+                 options</a>
+             </li>
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/librarian-resources" class="main-navigation-dropdown__submenu-link" title="Librarian Resources">Librarian
+                 Resources</a>
+             </li>
+           </ul>
+         </li>
+         <li class="main-navigation-dropdown__item active">
+           <a routerLink="/help" title="Help" class="main-navigation-dropdown__link js-link-toggle-main-sub-menu">Help</a>
+           <span class="main-navigation-dropdown__toggle-expand js-link-toggle-main-sub-menu">
+             <span class="glyphicon glyphicon-chevron-down 
+main-navigation-dropdown__chevron js-toggle-main-menu-item"
+               aria-label="expand or collapse" title="expand or collapse">
+             </span>
+           </span>
+           <ul class="main-navigation-dropdown__submenu js-toggle-display-sub-menu">
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/SAePublications_User_Guide_Online_compressed.pdf" class="main-navigation-dropdown__submenu-link"
+                 title="SA ePublications User Guide">SA ePublications User Guide</a>
+             </li>
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/how-to-subscribe" class="main-navigation-dropdown__submenu-link" title="How to subscribe">How
+                 to subscribe</a>
+             </li>
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/faq" class="main-navigation-dropdown__submenu-link" title="FAQ">FAQ</a>
+             </li>
+             <li class="main-navigation-dropdown__submenu-item ">
+               <a routerLink="/test123" class="main-navigation-dropdown__submenu-link" title="test">test</a>
+             </li>
+           </ul>
+         </li>
+       </ul>
+     </div>
