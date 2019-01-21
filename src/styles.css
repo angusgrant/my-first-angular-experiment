@@ -3715,7 +3715,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: transparent;
 }
 .nav > li.disabled > a {
   color: #d5dfec;
@@ -3730,7 +3730,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
+  background-color: transparent;
   border-color: #333;
 }
 .nav .nav-divider {
@@ -4218,10 +4218,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
-.navbar-default {
-  background-color: #ffffff;
-  border-color: #eeeeee;
-}
+
 .navbar-default .navbar-brand {
   color: #333;
 }
@@ -4239,13 +4236,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #333;
-  background-color: #ffffff;
+  
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #333;
-  background-color: #ffffff;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4270,7 +4266,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #ffffff;
   color: #333;
 }
 @media (max-width: 844px) {
@@ -13283,12 +13278,16 @@ span.heading1 {
 header {
   position: relative;
   z-index: 3;
+  max-width:1180px;
+  margin: 0 auto;
 }
 .header-container {
   font-size: 16px;
   z-index: 3;
   display: flex;
   align-items: center;
+  background-color: rgba(255, 0, 0, 0.8);
+
   /* Mobile Buttons */
 }
 .header-container .header-container__icon-menu {
@@ -13327,11 +13326,7 @@ header {
   margin: 18px 0 10px;
   font-weight: 700;
 }
-.main-header-container {
-  position: fixed;
-  right: 0;
-  left: 0;
-}
+
 .main-header-container.is-main-header-container--scrolling {
   border-bottom: 2px solid rgba(51, 51, 51, 0.3);
 }
@@ -13789,7 +13784,6 @@ button[aria-expanded=true] {
     display: block;
   }
   .navbar-nav > li.dropdown:hover > a {
-    background: #ffffff;
     color: #333;
   }
   .navbar-nav > li.dropdown.has-megamenu > a:focus,
@@ -13931,7 +13925,7 @@ button[aria-expanded=true] {
   padding: 6px 10px;
   border: none;
   display: block;
-  background-color: #fff;
+  background-color: transparent;
 }
 .main-navigation-menu .main-navigation-menu__button:focus {
   outline: none;

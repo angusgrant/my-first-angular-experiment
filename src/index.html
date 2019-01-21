@@ -1,14 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    
+   
   <meta charset="utf-8">
-  <title>MyFirstAngularSite</title>
+  <title>Angus Grant Portfolio site</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+    <canvas id="painting" style="z-index:-1;position:absolute;"></canvas>
+    <script>
+        var colorScale = d3.scaleOrdinal()
+          //.range(["red", "green", "blue"]);
+          .range(["#490A3D","#BD1550","#E97F02","#F8CA00","#8A9B0F"]);
+        
+        var canvas = d3.select("#painting").node();
+        canvas.width = window.innerWidth;  //document.width is obsolete
+        canvas.height = window.innerHeight; //document.height is obsolete
+        var ctx = canvas.getContext("2d");
+        
+        ctx.globalAlpha = 0.7;
+        ctx.globalCompositeOperation = "hard-light";
+        
+        var data = d3.range(400)
+          .map(function(d) {
+            return {
+              x: window.innerWidth * Math.random(),
+              y: window.innerHeight * Math.random(),
+              width: 7+70 * Math.random(),
+              height: 7+70 * Math.random(),
+              group: Math.floor(10 * Math.random())
+            }
+          })
+        
+        
+        var render = function(arr) {
+          ctx.clearRect(0,0,canvas.width,canvas.height);
+        
+          arr.forEach(function(d) {
+            ctx.fillStyle = colorScale(d.group);
+            ctx.beginPath();
+            ctx.arc(d.x, d.y, d.width/2, 0, 2*Math.PI);
+            ctx.fill();
+          });
+        };
+        
+        d3.timer(function(t) {
+          data.forEach(function(d) {
+            d.x += (2*Math.random() - 1);
+            d.y += (2*Math.random() - 1);
+          });
+        
+          render(data);
+        });
+      </script>
   <app-root></app-root>
 </body>
 </html>

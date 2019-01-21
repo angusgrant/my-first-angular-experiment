@@ -35,35 +35,28 @@
         </li>
       </ul>
       <div class="header-container__publication-menu">
-        <ul class="nav navbar-nav navbar-nav--publication-menu" aria-label="Menu navigation" role="menubar">
-          <li role="menuitem" class="button1 dropdown">
-            <a title="Publications" routerLink="/ " class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu0"
+        <ul class="nav navbar-nav navbar-nav--publication-menu" aria-label="Menu navigation" role="menubar"  >
+          <li role="menuitem" class="button1 dropdown" dropdown (onShown)="onShown()" (onHidden)="onHidden()" (isOpenChange)="isOpenChange()">
+            <a href id="portfolio" title="Portfolio" dropdownToggle (click)="false"
+            aria-controls="portfolio-dropdown" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu0"
               role="button" aria-haspopup="true" aria-expanded="false">
-              Publications
+              Portfolio
               <i class="fa fa-angle-down"></i>
             </a>
-            <ul class="dropdown-menu" role="menu">
-              <li role="presentation" class="journal-list ">
-                <a routerLink="/publications" title="A-Z index of journals" role="menuitem" tabindex="-1" class="megamenu-link">A-Z
-                  index of journals</a>
-              </li>
-              <li role="presentation" class="journal-list ">
-                <a routerLink="/publications-accredited" title="Accredited journals" role="menuitem" tabindex="-1"
-                  class="megamenu-link">Accredited journals</a>
-              </li>
-              <li role="presentation" class="journal-list ">
-                <a routerLink="/how-to-submit-a-paper" title="How to submit a paper" role="menuitem" tabindex="-1"
-                  class="megamenu-link">How to submit a paper</a>
+            <ul id="portfolio-dropdown" *dropdownMenu  class="dropdown-menu" role="menu" aria-labelledby="portfolio">
+              <li *ngFor="let client of portfolio" role="presentation" class="journal-list ">
+                <a [href]="client.url" [title]="client.description" target="_blank"
+                role="menuitem" tabindex="-1" class="megamenu-link">{{client.name}}</a>
               </li>
             </ul>
           </li>
-          <li role="menuitem" class="button2 dropdown">
-            <a title="Resources" routerLink="/" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" role="button"
-              aria-haspopup="true" aria-expanded="false">
-              Resources
+          <li role="menuitem" class="button2 dropdown" dropdown (onShown)="onShown()" (onHidden)="onHidden()" (isOpenChange)="isOpenChange()">
+            <a title="Experiments" href dropdownToggle (click)="false" aria-controls="experiments-dropdown" 
+            class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Experiments
               <i class="fa fa-angle-down"></i>
             </a>
-            <ul class="dropdown-menu" role="menu">
+            <ul id="experiments-dropdown" *dropdownMenu  class="dropdown-menu" role="menu" aria-labelledby="experiments">
               <li role="presentation" class="journal-list ">
                 <a routerLink="/how-to-get-access" title="How to get access / subscribe" role="menuitem" tabindex="-1"
                   class="megamenu-link">How to get access / subscribe</a>
@@ -82,13 +75,13 @@
               </li>
             </ul>
           </li>
-          <li role="menuitem" class="button3 dropdown">
-            <a title="About" routerLink="/about" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2" role="button"
+          <li role="menuitem" class="button3 dropdown" dropdown (onShown)="onShown()" (onHidden)="onHidden()" (isOpenChange)="isOpenChange()">
+            <a title="About" href dropdownToggle (click)="false" aria-controls="about-dropdown" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2" role="button"
               aria-haspopup="true" aria-expanded="false">
               About
               <i class="fa fa-angle-down"></i>
             </a>
-            <ul class="dropdown-menu" role="menu">
+            <ul id="about-dropdown" *dropdownMenu  class="dropdown-menu" role="menu" aria-labelledby="about">
               <li role="presentation" class="journal-list ">
                 <a routerLink="/about-us" title="About the society" role="menuitem" tabindex="-1" class="megamenu-link">About
                   the society</a>
