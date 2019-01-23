@@ -6303,31 +6303,31 @@ button.close {
   }
 }
 .fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+ 
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+ 
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+ 
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
@@ -10305,10 +10305,6 @@ button.ui-button::-moz-focus-inner {
   right: 0;
 }
 /* more specificity required here to overide default borders */
-.ui-spinner {
-  /* vertical centre icon */
-  /* need to fix icons sprite */
-}
 .ui-spinner a.ui-spinner-button {
   border-top: none;
   border-bottom: none;
@@ -10480,13 +10476,6 @@ button.ui-button::-moz-focus-inner {
   border-color: #adadad;
   text-decoration: none;
 }
-.ui-dialog-buttonset .ui-button {
-  /* ui-dialog-buttonset UI info */
-  /* ui-dialog-buttonset UI success */
-  /* ui-dialog-buttonset UI warning */
-  /* ui-dialog-buttonset UI Danger */
-  /* ui-dialog-buttonset UI Inverse */
-}
 .ui-dialog-buttonset .ui-button.ui-button-info {
   color: #ffffff;
   background-color: #5bc0de;
@@ -10606,9 +10595,7 @@ button.ui-button::-moz-focus-inner {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.ui-tabs {
-  /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
-}
+
 .ui-tabs .ui-tabs-nav li a {
   float: left;
   border: 1px solid #fff;
@@ -10914,22 +10901,13 @@ button.ui-button::-moz-focus-inner {
   width: 1.8em;
   height: 1.8em;
 }
-.ui-datepicker .ui-datepicker-prev-hover,
-.ui-datepicker .ui-datepicker-next-hover {
-  /*top: 1px;*/
-}
 .ui-datepicker .ui-datepicker-prev {
   left: 2px;
 }
 .ui-datepicker .ui-datepicker-next {
   right: 2px;
 }
-.ui-datepicker .ui-datepicker-prev-hover {
-  /*left:1px;*/
-}
-.ui-datepicker .ui-datepicker-next-hover {
-  /*right:1px;*/
-}
+
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
   display: block;
@@ -11294,9 +11272,7 @@ a[rel="external"] {
 .header-sidebar .tools-nav .panel-body ul li {
   display: block;
 }
-.header-sidebar .share-nav {
-  /*right: 105px;*/
-}
+
 .header-sidebar label {
   display: none;
 }
@@ -11526,7 +11502,7 @@ a[rel="external"] {
 .keyicon {
   background-color: #008461;
   color: #ffffff;
-  display: inline-block;
+  display: block;
   font-size: 11px;
   font-weight: bold;
   line-height: 12px;
@@ -11535,7 +11511,6 @@ a[rel="external"] {
   text-align: center;
   text-transform: uppercase;
   width: 22px;
-  vertical-align: middle;
   float: left;
 }
 .accessIcons {
@@ -11737,7 +11712,6 @@ a.lesslink {
 #p2wRecaptcha #timer_id {
   display: inline;
   margin: 5px;
-  width: auto;
   float: none;
 }
 .tandc-container {
@@ -12118,7 +12092,6 @@ a.lesslink {
   font-weight: bold;
 }
 .articleTitle p {
-  margin-bottom: 0;
   display: inline;
 }
 .main-content-container > .nav-tabs {
@@ -12177,11 +12150,7 @@ a.lesslink {
   float: left;
   padding: 0;
 }
-.pills-container .nav-pills > li {
-  /* fix for plat-1211: padding not needed. 
-       * padding:4px 3px;
-       */
-}
+
 .pills-container .nav-pills > li > a {
   border-radius: 0;
   margin-bottom: 0;
@@ -12497,7 +12466,6 @@ a.lesslink {
 @media (min-width: 1200px) {
   /* Generic Tabing */
   .transformer-tabs li {
-    display: inline-block;
     float: left;
     padding: 0;
     vertical-align: bottom;
@@ -12571,14 +12539,7 @@ label.error {
 #bellowheadercontainer .form-group {
   overflow: hidden;
 }
-#bellowheadercontainer #regForm {
-  /*       .submit-form-button-container .btn {
-          float:none;
-          margin-left: 20px;
-      }
-      commented out as does not work well on registration page vs update registration.
-      */
-}
+
 #bellowheadercontainer #regForm .form-group {
   margin-right: -15px;
   margin-left: -15px;
@@ -14535,9 +14496,6 @@ h2#dailyMetrics {
   line-height: 2;
 }
 /* Advanced Search page  */
-#advancedsearchpage {
-  /* pop up widget styling */
-}
 #advancedsearchpage .advancedPageSize {
   display: none;
 }
@@ -14685,12 +14643,7 @@ h2#dailyMetrics {
 }
 /* small, Medium devices  */
 @media screen and (max-width: 844px) {
-  #advancedsearchpage {
-    /*		.termInput {
-    		margin-bottom:0;
-    	}
-*/
-  }
+ 
   #advancedsearchpage .ui-dialog.ui-widget-content {
     width: 90%!important;
   }
@@ -14700,15 +14653,7 @@ h2#dailyMetrics {
 }
 /* small, Medium devices  */
 @media screen and (max-width: 400px) {
-  #advancedsearchpage {
-    /*.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4,
-        .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, 
-        .col-xs-9, col-xs-10, .col-xs-11, .col-xs-12 {
-            //override bootstrap padding at mobile resolution.
-            padding-left:4px;
-            padding-right:4px;
-        }*/
-  }
+
   #advancedsearchpage .sWControls.head {
     top: 61px;
   }
@@ -14771,7 +14716,6 @@ h2#dailyMetrics {
   border: 1px solid #aaa;
 }
 .bookmark_list {
-  display: inline-block;
   float: left;
   list-style-type: none;
   font-size: 80%;
@@ -15679,10 +15623,7 @@ body {
   .browse-facet-pane .modal.fade .modal-content .modal-header {
     display: none;
   }
-  .navbar-nav-main-item:hover > .dropdown-menu {
-    /*        display: block;
-*/
-  }
+
   .navbar-nav-main-item:hover > .dropdown-toggle {
     color: #fff;
   }
@@ -17659,30 +17600,7 @@ a.readmore,
   margin-bottom: 20px;
 }
 /* Content alerts */
-#newsletterspage,
-#objectapertspage,
-#currentalertspage {
-  /* 
-    .a_to_z_mobile {
-        font-family: @font-family-sans-serif;
-        float: right;
-        margin-right:10px;
-        @media (min-width: 768px) {
-            display: none;
-        }
-    }
 
-    .paginator {
-        display: inline-block;
-        font-size: 9.5px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 1em;
-    }
-    * 
-    */
-}
 #newsletterspage .updateAlertsHeading,
 #objectapertspage .updateAlertsHeading,
 #currentalertspage .updateAlertsHeading {
@@ -17889,7 +17807,6 @@ a:focus {
   margin: 0;
 }
 .icon-image ul.tabset li {
-  width: auto;
   border-bottom: none;
   display: inline;
   vertical-align: bottom;
