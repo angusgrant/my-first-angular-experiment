@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 import { PortfolioService } from '../portfolio.service';
+import {Portfolio} from '../portfolio';
 
 @Component({
   selector: 'app-nav',
@@ -7,13 +9,20 @@ import { PortfolioService } from '../portfolio.service';
   styleUrls: ['./nav.component.css']
 
 })
-export class NavComponent {
+export class NavComponent implements OnInit {
   
-  portfolio = Portfolio[];
+  portfolio: Portfolio[];
   
   constructor(private portfolioService: PortfolioService) { }
 
-  ngOnInit() {
+  getPortfolio(): void {
+    this.portfolio = this.portfolioService.getPortfolio();
   }
+
+  ngOnInit() {
+    this.getPortfolio();
+  }
+
+
 
 }

@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+
+import {Portfolio} from './portfolio';
 import { PORTFOLIO } from './mock-portfolio';
 
 @Injectable({
@@ -6,5 +8,8 @@ import { PORTFOLIO } from './mock-portfolio';
 })
 export class PortfolioService {
 
-  getPortfolio() { return PORTFOLIO }
+
+  getPortfolio(): Portfolio[] {
+     return PORTFOLIO 
+    }
 }
