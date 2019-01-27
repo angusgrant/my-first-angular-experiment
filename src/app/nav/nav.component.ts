@@ -16,7 +16,8 @@ export class NavComponent implements OnInit {
   constructor(private portfolioService: PortfolioService) { }
 
   getPortfolio(): void {
-    this.portfolio = this.portfolioService.getPortfolio();
+    this.portfolioService.getPortfolio()
+        .subscribe(portfolio => this.portfolio = portfolio)
   }
 
   ngOnInit() {

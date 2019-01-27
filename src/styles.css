@@ -13819,6 +13819,7 @@ button[aria-expanded=true] {
 }
 #bellowheadercontainer {
   padding-top: 90px;
+  background-color: #fff;
 }
 #homepage #bellowheadercontainer {
   padding-top: 0;

@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { MessagesComponent } from './messages/messages.component';
 
 const appRoutes: Routes = [
   { path: '',
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     AboutComponent,
     HomeComponent,
     ContactComponent,
-    HamburgerMenuComponent
+    HamburgerMenuComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
