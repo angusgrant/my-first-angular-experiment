@@ -1,7 +1,7 @@
 <header class="header" id="header">
   <div class="navbar navbar-default main-header-container" role="navigation">
     <div class="container header-container">
-      <a routerLink="\" title="" class="logo header-container__logo"><img alt="Ingenta CMS" src="assets/images/139x66.svg"
+      <a routerLink="/" title="" class="logo header-container__logo"><img alt="Ingenta CMS" src="assets/images/139x66.svg"
           class="img-responsive main-logo-image" /></a>
       <ul class="navbar-nav-main-menu header-container__icon-menu" aria-label="User navigation items" role="menu">
         <!-- Finally moved it to a separate tag! -->
@@ -36,7 +36,7 @@
       </ul>
       <div class="header-container__publication-menu">
         <ul class="nav navbar-nav navbar-nav--publication-menu" aria-label="Menu navigation" role="menubar"  >
-          <li role="menuitem" class="button1 dropdown" dropdown (onShown)="onShown()" (onHidden)="onHidden()" (isOpenChange)="isOpenChange()">
+          <li role="menuitem" class="button1 dropdown" dropdown>
             <a href id="portfolio" title="Portfolio" dropdownToggle (click)="false"
             aria-controls="portfolio-dropdown" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu0"
               role="button" aria-haspopup="true" aria-expanded="false">
@@ -50,7 +50,7 @@
               </li>
             </ul>
           </li>
-          <li role="menuitem" class="button2 dropdown" dropdown (onShown)="onShown()" (onHidden)="onHidden()" (isOpenChange)="isOpenChange()">
+          <li role="menuitem" class="button2 dropdown" dropdown>
             <a title="Experiments" href dropdownToggle (click)="false" aria-controls="experiments-dropdown" 
             class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               Experiments
@@ -58,24 +58,13 @@
             </a>
             <ul id="experiments-dropdown" *dropdownMenu  class="dropdown-menu" role="menu" aria-labelledby="experiments">
               <li role="presentation" class="journal-list ">
-                <a routerLink="/how-to-get-access" title="How to get access / subscribe" role="menuitem" tabindex="-1"
-                  class="megamenu-link">How to get access / subscribe</a>
+                <a href="http://angusgrant.me.uk" title="D3 charts big data experiment" role="menuitem" tabindex="-1"
+                  class="megamenu-link">D3 Charts</a>
               </li>
-              <li role="presentation" class="journal-list ">
-                <a routerLink="/info-for-authors" title="Information for authors" role="menuitem" tabindex="-1" class="megamenu-link">Information
-                  for authors</a>
-              </li>
-              <li role="presentation" class="journal-list ">
-                <a routerLink="/info-for-librarians" title="Information for librarians" role="menuitem" tabindex="-1"
-                  class="megamenu-link">Information for librarians</a>
-              </li>
-              <li role="presentation" class="journal-list ">
-                <a routerLink="/oa-policy" title="Open Access policy" role="menuitem" tabindex="-1" class="megamenu-link">Open
-                  Access policy</a>
-              </li>
+            
             </ul>
           </li>
-          <li role="menuitem" class="button3 dropdown" dropdown (onShown)="onShown()" (onHidden)="onHidden()" (isOpenChange)="isOpenChange()">
+          <li role="menuitem" class="button3 dropdown" dropdown >
             <a title="About" href dropdownToggle (click)="false" aria-controls="about-dropdown" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2" role="button"
               aria-haspopup="true" aria-expanded="false">
               About
@@ -83,16 +72,14 @@
             </a>
             <ul id="about-dropdown" *dropdownMenu  class="dropdown-menu" role="menu" aria-labelledby="about">
               <li role="presentation" class="journal-list ">
-                <a routerLink="/about-us" title="About the society" role="menuitem" tabindex="-1" class="megamenu-link">About
-                  the society</a>
+                <a routerLink="/about" title="About Me" role="menuitem" tabindex="-1" class="megamenu-link">About
+                  me</a>
               </li>
-              <li role="presentation" class="journal-list ">
-                <a routerLink="/how-to-subscribe" title="How to subscribe" role="menuitem" tabindex="-1" class="megamenu-link">How
-                  to subscribe</a>
+              <li role="presentation" class="journal-list">
+                <a routerLink="/contact" title="How to subscribe" 
+                role="menuitem" tabindex="-1" class="megamenu-link">Contact me</a>
               </li>
-              <li role="presentation" class="journal-list ">
-                <a routerLink="/faq" title="FAQ" role="menuitem" tabindex="-1" class="megamenu-link">FAQ</a>
-              </li>
+
             </ul>
           </li>
         </ul>
