@@ -25,7 +25,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/d3.v5.js",
+              "src/bubbles.js"
+            ]
           },
           "configurations": {
             "production": {
