@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { PortfolioService } from '../portfolio.service';
-import {Portfolio} from '../portfolio';
+import {PortfolioList} from '../portfolio';
 
 @Component({
   selector: 'app-nav',
@@ -13,7 +13,7 @@ import {Portfolio} from '../portfolio';
 })
 export class NavComponent implements OnInit {
   
-  portfolio: Portfolio[];
+  portfolio: PortfolioList[];
   
   constructor( private route: ActivatedRoute, 
                private portfolioService: PortfolioService,
