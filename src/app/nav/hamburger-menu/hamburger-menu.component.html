@@ -1,16 +1,18 @@
 
-       <button (click)="toggleShowDiv('divA')" type="button" class="main-navigation-menu__button" data-toggle="collapse" data-target="#collapse-main-nav"
-       aria-haspopup="true" [attr.aria-expanded]="animationState == 'in' ? true :  false" aria-label="Site menu" title="Site menu">
+       <button (click)="toggleShowDiv('divA')" type="button" 
+        class="main-navigation-menu__button"  
+       aria-haspopup="true" [attr.aria-expanded]="animationState == 'in' ? true :  false" 
+       aria-label="Site menu" title="Site menu">
        <span class="icon-bar bar-one"></span>
        <span class="icon-bar bar-two"></span>
        <span class="icon-bar bar-three"></span>
      </button>
      <div class="main-navigation-menu__dropdown 
-main-navigation-dropdown" id="collapse-main-nav" [@slideInOut]="animationState">
+main-navigation-dropdown" [@slideInOut]="animationState">
        <ul class="main-navigation-dropdown__menu">
          <li class="main-navigation-dropdown__item active">
-           <a routerLink="/publications" title="A-Z Publications" class="main-navigation-dropdown__link js-link-toggle-main-sub-menu">A-Z
-             Publications</a>
+           <a routerLink="/Portfolio" title="My Portfolio" class="main-navigation-dropdown__link js-link-toggle-main-sub-menu">A-Z
+             Portfolio</a>
            <span class="main-navigation-dropdown__toggle-expand js-link-toggle-main-sub-menu">
              <span class="glyphicon glyphicon-chevron-down 
 main-navigation-dropdown__chevron js-toggle-main-menu-item"
