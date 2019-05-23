@@ -1,6 +1,6 @@
-import {Portfolio} from './portfolio';
+import {PortfolioList} from './portfolio';
 
-export const PORTFOLIO : Portfolio[] = [
+export const PORTFOLIO : PortfolioList[] = [
     {
       "id": 1,
       "name": "Ingenta Open",
